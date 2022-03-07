@@ -24,6 +24,8 @@ include('./config/sql.php');
     <main>
         <h1>Les fruits du démons</h1>
     </main>
+    
+    <?php include($templatesPath . 'footer.php'); ?>
 </body>
 
 </html>
