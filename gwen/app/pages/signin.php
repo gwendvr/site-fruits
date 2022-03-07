@@ -19,32 +19,33 @@ include('../config/sql.php');
 
 <body>
     <main>
-        <div class="container">
+    <div class="container">
             <div class="form">
                 <form action="#">
-                    <h1>Connectez-vous :</h1>
+                    <h1>Inscription au site :</h1>
+                    <input type="text" placeholder="Nom" />
+                    <input type="text" placeholder="Prenom" />
+                    <input type="text" placeholder="Age" />
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <a href="#"><u>Mot de passe oublié</u></a>
-                    <div class="button">
-                        <a href="#">Connexion</a>
+                    <div class="button margin">
+                        <a href="#">s'inscrire</a>
                     </div>
                 </form>
             </div>
             <div class="change-form-container">
                 <div class="change-form">
                     <div class="panel">
-                        <h1>Vous êtes nouveau ?</h1>
+                        <h1>Vous êtes déjà inscrit ?</h1>
                         <div class="panel-text">
-                            <p>Inscrivez-vous sur notre site de fruits du démons !</p>
-                            <p>Vous pourrez bénéficier de la notation de nos produits !</p>
+                            <p>Alors connectez vous juste ici !</p>
                         </div>
                         <div class="buttons">
                             <div class="button">
-                                <a href="<? echo $rootPath; ?>/pages/signin.php" class="change">s'inscrire</a>
+                                <a href="<? echo $rootPath;?>/pages/login.php" class="change">se connecter</a>
                             </div>
                             <div class="button margin">
-                                <a href="<? echo $rootPath; ?>/index.php" class="change">Retour à l'accueil</a>
+                                <a href="<? echo $rootPath;?>/index.php" class="change">Retour à l'accueil</a>
                             </div>
                         </div>
                     </div>
